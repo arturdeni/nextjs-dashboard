@@ -1,5 +1,11 @@
-import { Inter } from 'next/font/google';
-import { Lusitana  } from 'next/font/google';
- 
-export const inter = Inter({ subsets: ['latin'] });
-export const lusitana = Lusitana({ weight: ['400', '700'], subsets: ['latin'] });
+import { Inter, Lusitana } from 'next/font/google';
+
+type FontType = {
+  className: string;
+  style: {
+    fontFamily: string;
+  };
+};
+
+export const inter: FontType = Inter({ subsets: ['latin'] });
+export const lusitana: FontType = Lusitana({ weight: ['400', '700'], subsets: ['latin'] });
